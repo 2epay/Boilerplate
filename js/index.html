@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playground</title>
+  <script src="./plugin.js"></script>
+</head>
+
+<body>
+  <h1>Playground:</h1>
+
+  <script>
+    // How to Use: 
+    window.addEventListener('DOMContentLoaded', function () {
+      var greeter = new Greeter("world");
+      var button = document.createElement('button');
+      button.textContent = "Say Hello";
+      button.onclick = function () {
+        alert(greeter.greet());
+      };
+      document.body.appendChild(button);
+    });
+  </script>
+</body>
+
+</html>
